@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+#background
+{
+    background: url("Fight Corona.jpg");
+    height:350px;
+    width: 100%;
+    margin: 0px;
+    padding: 0%;
+}
+
+h1
+{
+    text-align:center;
+    padding-top: 0px;
+    color: white;
+    font-size: 50px;
+}
+
+h3{
+    padding-left: 12px;
+    color: darkgreen;
+    text-align: center;
+}
+
+li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#left
+{
+    float: left;
+    margin-top: 4px;
+    font-size: 20px;
+    border: 2px red solid;
+    background-color: burlywood;
+}
+
+#center
+{
+    float: left;
+    margin: 4px 4px;
+    font-size: 20px;
+    border: 2px red solid;
+    background-color: burlywood;
+
+}
+
+#right
+{
+    float: left;
+    margin: 4px 4px;
+    font-size: 20px;
+    border: 2px red solid;
+    background-color: burlywood;
+    width:32%;
+}
+
+#footer
+{
+    clear: both;
+    border: 1px white solid;
+    background-color: red;
+}
