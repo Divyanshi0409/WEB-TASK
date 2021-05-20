@@ -81,7 +81,7 @@ h1 {
 
 /** Wrapper for navbar and hero **/
 .home {
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("/images/bg.jpg") no-repeat;
   background-size: cover;
 }
 
