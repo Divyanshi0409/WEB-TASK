@@ -1,0 +1,159 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row-reverse;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 2px 15px;
+  color: rgb(16, 50, 247);
+  font-family: "Bree Serif", serif;
+  /* font-family: "Pacifico", cursive; */
+}
+
+#navbar ul li a:hover {
+  border: 1px solid black;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h3 {
+  margin-left: 10px;
+  width: 200px;
+  font-family: cursive;
+  color: brown;
+  font-size: 30px;
+}
+
+#logo img {
+  height: 100px;
+  width: 150px;
+}
+
+#logo input {
+  width: 570px;
+  height: 20px;
+  margin: 15px;
+  font-family: "Bree Serif", serif;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url(../images/baby.jpg) no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h4 {
+  color: rgb(17, 9, 136);
+  text-align: center;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 20px;
+}
+
+#home p {
+  color: rgb(17, 9, 136);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  margin-bottom: 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  margin: 17px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Bree Serif", serif;
+}
+
+.btn:hover {
+  border-radius: 14px;
+  color: blue;
+  background-color: coral;
+  transform: scale(1.5);
+}
+
+@media only screen and (max-width: 425px) {
+  #logo img {
+    height: 80px;
+    width: 100px;
+    padding-right: 3px;
+  }
+  #navbar ul li a {
+    padding: 3px 15px;
+    font-size: 0.8rem;
+  }
+  #logo h4 {
+    font-size: 20px;
+  }
+  body {
+    background-color: skyblue;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 808px) {
+  #logo img {
+    height: 80px;
+    width: 100px;
+  }
+  #navbar ul li a {
+    padding: 3px 10px;
+    font-size: 0.8rem;
+  }
+
+  #logo h4 {
+    font-size: 20px;
+  }
+  body {
+    background-color: greenyellow;
+  }
+}

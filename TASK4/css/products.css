@@ -1,0 +1,209 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#navbar {
+  background-color: rgb(189, 158, 158);
+  display: flex;
+  align-items: center;
+  flex-wrap: no-wrap;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-direction: row-reverse;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 2px 15px;
+  color: rgb(16, 50, 247);
+  font-family: "Bree Serif", serif;
+}
+
+#navbar ul li a:hover {
+  border: 1px solid black;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h3 {
+  margin-left: 10px;
+  width: 200px;
+  font-family: cursive;
+  color: brown;
+  font-size: 30px;
+}
+
+#logo img {
+  height: 100px;
+  width: 150px;
+}
+
+#logo input {
+  width: 570px;
+  height: 20px;
+  margin: 15px;
+  font-family: "Bree Serif", serif;
+}
+
+.main_heading {
+  font-size: 50px;
+  margin: 10px;
+}
+
+.main img {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.decoration {
+  height: 200px;
+  width: 200px;
+  border: 2px solid gray;
+}
+
+.decoration:hover {
+  transform: scale(1.2);
+}
+
+.container {
+  margin: 30px;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "heading heading heading heading heading"
+    "First Second Third Fourth Fifth"
+    "Sixth Seventh Eighth Ninth Tenth";
+}
+
+.topic_heading {
+  grid-area: heading;
+  background-color: bisque;
+  color: goldenrod;
+  height: 30px;
+  padding: 3px;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+.image1 {
+  grid-area: First;
+}
+
+.image2 {
+  grid-area: Second;
+}
+
+.image3 {
+  grid-area: Third;
+}
+
+.image4 {
+  grid-area: Fourth;
+}
+
+.image5 {
+  grid-area: Fifth;
+}
+
+.image6 {
+  grid-area: Sixth;
+}
+
+.image7 {
+  grid-area: Seventh;
+}
+
+.image8 {
+  grid-area: Eighth;
+}
+
+.image9 {
+  grid-area: Ninth;
+}
+
+.image10 {
+  grid-area: Tenth;
+}
+
+@media only screen and (max-width: 425px) {
+  #logo img {
+    height: 80px;
+    width: 100px;
+    padding-right: 3px;
+  }
+  #navbar ul li a {
+    padding: 3px 15px;
+  }
+  #navbar ul li a {
+    padding: 3px 10px;
+    font-size: 20px;
+  }
+
+  #logo h4 {
+    font-size: 20px;
+  }
+  #logo input {
+    display: none;
+  }
+  #navbar {
+    width: 300vw;
+  }
+  body {
+    background-color: skyblue;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 808px) {
+  #logo img {
+    height: 80px;
+    width: 100px;
+  }
+  #navbar ul li a {
+    padding: 3px 10px;
+    font-size: 0.8rem;
+  }
+
+  #logo h4 {
+    font-size: 20px;
+  }
+  #logo input {
+    width: 400px;
+  }
+  #navbar {
+    width: 150vw;
+  }
+  body {
+    background-color: greenyellow;
+  }
+}
+
+@media only screen and (min-width: 809px) and (max-width: 1024px) {
+  #navbar {
+    width: 1200px;
+  }
+
+  #navbar ul li a {
+    padding: 3px 10px;
+    font-size: 20px;
+  }
+}
