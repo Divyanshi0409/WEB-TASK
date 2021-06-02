@@ -1,159 +1,141 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
-#navbar {
-  display: flex;
-  align-items: center;
-  flex-wrap: no-wrap;
-  width: 100%;
-}
-
-#navbar ul {
-  display: flex;
-  align-items: center;
+body {
   width: 100vw;
-  flex-direction: row-reverse;
+  overflow-x: hidden;
 }
 
-#navbar ul li {
-  list-style: none;
-  font-size: 1rem;
+.navbar {
+  display: flex;
+  width: 100%;
+  padding: 8px 8px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  background: #ffe4c4;
+  color: #f38c16;
+  border-bottom: 4px solid #f38c16;
+  flex-wrap: wrap;
 }
 
-#navbar ul li a {
-  text-decoration: none;
-  display: block;
-  padding: 2px 15px;
-  color: rgb(16, 50, 247);
-  font-family: "Bree Serif", serif;
-  /* font-family: "Pacifico", cursive; */
-}
-
-#navbar ul li a:hover {
-  border: 1px solid black;
-}
-
-#logo {
+.nav-brand {
+  flex: 10 0 320px;
   display: flex;
   align-items: center;
+  align-content: center;
 }
 
-#logo h3 {
-  margin-left: 10px;
-  width: 200px;
-  font-family: cursive;
-  color: brown;
-  font-size: 30px;
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #f38c16;
+  border-radius: 50%;
+}
+.brand-name {
+  font-size: 2.2rem;
+  font-family: "Bree Serif", cursive;
+  font-style: italic;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #f38c16;
+  padding: 8px 4px;
+  letter-spacing: 2px;
 }
 
-#logo img {
-  height: 100px;
-  width: 150px;
+.nav-menu {
+  flex: 5;
+  display: flex;
+  list-style: none;
+  padding-top: 8px;
+}
+.nav-item {
+  flex: 1;
+  padding: 4px 4px;
+  display: flex;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+}
+.nav-link {
+  text-decoration: none;
+  text-align: center;
+  color: #ff8800;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.nav-link:hover {
+  background-color: #ff8800;
+  color: #ffe4c4;
+  transform: translate(-6%, -8%);
 }
 
-#logo input {
-  width: 570px;
-  height: 20px;
-  margin: 15px;
-  font-family: "Bree Serif", serif;
+@media only screen and (max-width: 767px) {
+  .nav-brand {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .nav-link {
+    background: #ffd9aa;
+  }
 }
 
-/* Home Section */
-#home {
+.home {
+  display: grid;
+  width: 100%;
+  height: 90vh;
+  background: url("../images/baby.jpg");
+  background-size: cover;
+  place-items: center center;
+  place-content: center center;
+}
+
+.hero {
   display: flex;
   flex-direction: column;
-  padding: 3px 200px;
-  height: 400px;
-  justify-content: center;
-  align-items: center;
-}
-
-#home::before {
-  content: "";
-  position: absolute;
-  background: url(../images/baby.jpg) no-repeat;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.89;
-}
-
-#home h4 {
-  color: rgb(17, 9, 136);
+  gap: 2.2rem;
+  font-size: 2.5rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
-  font-family: "Great Vibes", cursive;
-  margin-bottom: 20px;
-}
-
-#home p {
-  color: rgb(17, 9, 136);
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Bree Serif", serif;
-  margin-bottom: 20px;
-}
-
-/* Utility Classes */
-.h-primary {
-  font-size: 3.8rem;
-  padding: 12px;
+  padding: 64px 24px;
+  border-radius: 8px;
+  margin: 8px 16px;
 }
 
 .btn {
-  padding: 6px 20px;
-  border: 2px solid white;
-  background-color: transparent;
-  margin: 17px;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  margin-top: 32px;
+  margin-bottom: -24px;
 }
 
 .btn a {
   text-decoration: none;
-  font-size: 1rem;
-  font-family: "Bree Serif", serif;
+  color: black;
+  padding: 16px 16px;
+  border-radius: 4px;
+  background: #f38c16;
+  font-weight: 680;
+  color: #ffe4c4;
+  letter-spacing: 1px;
 }
 
-.btn:hover {
-  border-radius: 14px;
-  color: blue;
-  background-color: coral;
-  transform: scale(1.5);
+.h-primary {
+  font-family: "Bree Serif", cursive;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #f38c16;
+  font-size: 50px;
 }
 
-@media only screen and (max-width: 425px) {
-  #logo img {
-    height: 80px;
-    width: 100px;
-    padding-right: 3px;
-  }
-  #navbar ul li a {
-    padding: 3px 15px;
-    font-size: 0.8rem;
-  }
-  #logo h4 {
-    font-size: 20px;
-  }
-  body {
-    background-color: skyblue;
-  }
-}
-@media only screen and (min-width: 425px) and (max-width: 808px) {
-  #logo img {
-    height: 80px;
-    width: 100px;
-  }
-  #navbar ul li a {
-    padding: 3px 10px;
-    font-size: 0.8rem;
-  }
-
-  #logo h4 {
-    font-size: 20px;
-  }
-  body {
-    background-color: greenyellow;
-  }
+p {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 24px;
+  color: rgb(189, 69, 26);
 }
