@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(to right, blueviolet, blue);
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+/* styling the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  width: inherit;
+  align-items: center;
+}
+
+/* Styling the todo box */
+.task {
+  height: 30px;
+  width: 500px;
+  border-color: blue;
+  background-color: white;
+  display: flex;
+}
+
+.box {
+  height: 30px;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+
+/* styling all the icons */
+.icon {
+  height: 75%;
+  cursor: pointer;
+  margin: 4px;
+}
+
+/* Styling the form */
+.new {
+  border-color: transparent;
+  height: 24px;
+  width: 500px;
+}
+
+.faq__content {
+  font-family: cursive;
+  background-color: white;
+  margin-bottom: 10px;
+  height: 200px;
+  display: flex;
+}
+
+summary {
+  margin-bottom: 20px;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  height: 30px;
+  width: 500px;
+  border-color: blue;
+  background-color: white;
+  display: flex;
+}
+
+details > summary::after {
+  position: relative;
+  right: 20px;
+}
+
+details[open] > summary::after {
+  position: absolute;
+  right: 20px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.left {
+  display: flex;
+  height: 150px;
+  margin: 10px;
+}
+
+.right {
+  display: grid;
+  margin: 10px;
+  height: 30px;
+}
+
+#delete {
+  position: relative;
+  top: 12px;
+  left: 80px;
+  background-color: red;
+  box-shadow: 2px 2px black;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* styling footer */
+footer {
+  position: absolute;
+  bottom: 1px;
+}
+
+footer > p {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+hr {
+  width: 100vw;
+}
