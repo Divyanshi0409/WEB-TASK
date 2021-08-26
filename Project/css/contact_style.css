@@ -1,0 +1,48 @@
+body {
+  background-color: brown !important;
+  color: white !important;
+}
+
+/* styling the logo and name*/
+.logo {
+  width: 40px;
+  height: 40px;
+  border: solid 1px rgb(136, 133, 133);
+  border-radius: 100%;
+  margin: 3px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* styling nav */
+.active {
+  border-bottom: 3px solid black;
+  font-family: cursive;
+}
+
+.nav-item {
+  margin: 5px;
+  padding: 5px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+/* styling the page */
+.cover-container {
+  max-width: 42em;
+}
+
+/* styling content */
+a {
+  color: #212529 !important;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
